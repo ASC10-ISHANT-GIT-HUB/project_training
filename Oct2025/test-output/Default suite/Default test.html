@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 14 16:42:49 IST 2025</td>
+<td>Started on:</td><td>Thu Oct 16 15:15:00 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14908 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1082 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,44 +76,121 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pac1.Lab8.lab3BasicFlowTest()'><b>lab3BasicFlowTest</b><br>Test class: pac1.Lab8<br>Test method: Automates the basic flow from Lab 3<br/>
-<a href="#Output-1959758632" onClick='toggleBox("Output-1959758632", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1959758632" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1959758632">
-Clicked on the 'Desktops' tab.<br/>
-Clicked on 'Mac' from the dropdown.<br/>
-Selected 'Name (A - Z)' from the Sort By dropdown.<br/>
-Clicked 'Add to Cart' for the iMac.<br/>
-Verified that the product was successfully added to the cart.<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>pac1.Lab8@351d00c0</td></tr>
-<tr>
-<td title='pac1.Lab8.lab4ValidationTest()'><b>lab4ValidationTest</b><br>Test class: pac1.Lab8<br>Test method: Automates the validation flow from Lab 4<br/>
-<a href="#Output-1338770454" onClick='toggleBox("Output-1338770454", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1338770454" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1338770454">
-Verified the page title is 'Your Store'.<br/>
-Clicked on the 'Desktops' tab.<br/>
-Clicked on 'Mac' from the dropdown.<br/>
-Verified the page heading is 'Mac'.<br/>
-Selected 'Name (A - Z)' from the Sort By dropdown.<br/>
-Clicked 'Add to Cart' and verified the success message.<br/>
-Searched for 'Mobile'.<br/>
-Cleared the search criteria text box.<br/>
-Entered 'Monitors' into the search criteria text box.<br/>
-Checked the 'Search in product descriptions' checkbox.<br/>
-Clicked the search button to perform a new search.<br/>
-Verified that the search results page for 'Monitors' is displayed correctly.<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>pac1.Lab8@351d00c0</td></tr>
+<td title='pac1.TC008_TestNG2_Excel.f()'><b>f</b><br>Test class: pac1.TC008_TestNG2_Excel</td>
+<td><div><pre>java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:395)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:364)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:223)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:336)
+	at pac1.TC008_TestNG2_Excel.logindata(TC008_TestNG2_Excel.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
+Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:298)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:285)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:393)
+	... 34 more
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:295)
+	... 36 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace434398524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace434398524'><pre>java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:395)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:364)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:223)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:336)
+	at pac1.TC008_TestNG2_Excel.logindata(TC008_TestNG2_Excel.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
+Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can&apos;t open the specified file input stream from file: &apos;C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx&apos;
+	at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:298)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:285)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:393)
+	... 34 more
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Ascendion\git\project_training\Oct2025\inputdata.xlsx
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:295)
+	... 36 more
+</pre></div></td>
+<td>0</td>
+<td>pac1.TC008_TestNG2_Excel@62379589</td></tr>
 </table><p>
 </body>
 </html>

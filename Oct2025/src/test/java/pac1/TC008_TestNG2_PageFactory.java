@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -29,7 +30,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
  
-public class TC008_TestNG {
+public class TC008_TestNG2_PageFactory {
 	WebDriver driver;
 	@Test
 	public void test2()
@@ -45,7 +46,7 @@ public class TC008_TestNG {
   public void f(String uname, String pword) {
 	  System.out.println("This is the Test");
 	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	  login_pageobjects obj=new login_pageobjects(driver);
+	  login_pagefactory obj=PageFactory.initElements(driver, login_pagefactory.class);
 	  obj.enterusername(uname);
 	  obj.enterpassword(pword);
 	  obj.clickonsubmit();
